@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy — FacePhantom</title>
+    <link rel="canonical" href="https://jnuno03.github.io/facephantom-privacy/privacy-policy.html" />
     <meta name="description" content="FacePhantom privacy policy. Face detection and blurring run on your device. Photos, videos, and named-face hashes stay on this device unless you export them." />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <style>
@@ -92,7 +93,7 @@
       <p class="updated">Last updated: August 28, 2026</p>
 
       <div class="callout">
-        <strong>Short version:</strong> FacePhantom processes camera, photo, and video data on your device. We do not operate a cloud backend for this app. Your media, email, and named-face hashes stay on this device unless you export or share them yourself.
+        <strong>Short version:</strong> FacePhantom processes camera, photo, and video data on your device. We do not operate a cloud backend for this app. Your media, email, and named-face hashes stay on this device unless you export or share them yourself. The free app may show Google AdMob ads. A $3.99/month Google Play subscription removes ads.
       </div>
 
       <h2>1. Who we are</h2>
@@ -111,6 +112,7 @@
         <li><strong>Photos and videos.</strong> Media you capture or import, including blurred exports you save, is stored on the device.</li>
         <li><strong>Named-face records.</strong> If you name a person, the app stores a one-way hash of a numeric face descriptor, the name you typed, and which account it belongs to. We do not store a crop of the face or the raw descriptor after hashing.</li>
         <li><strong>Session state.</strong> The app remembers that you are signed in until you log out.</li>
+        <li><strong>Subscription status.</strong> If you subscribe to remove ads, we cache that entitlement on the device so ads stay off. Google Play is the source of truth for whether the subscription is active.</li>
       </ul>
       <p>Face detection runs in memory on the device. Live camera frames and temporary face descriptors are used to detect and match faces and are not uploaded to us.</p>
 
@@ -120,8 +122,7 @@
         <li>Your original or blurred photos or videos</li>
         <li>Face images, face embeddings, or face hashes</li>
         <li>Precise location, contacts, or microphone audio (the camera capture path does not record audio)</li>
-        <li>Payment card details (the current app does not process payments)</li>
-        <li>Advertising identifiers for third-party ads (the current app does not show third-party ads)</li>
+        <li>Payment card details (Google Play processes subscription payments, not FacePhantom)</li>
       </ul>
       <p>We do not sell your information.</p>
 
@@ -131,6 +132,7 @@
         <li>To recognize people you have named, only against the face book for the email signed in on this device</li>
         <li>To keep photos, videos, and named faces for that email on this device</li>
         <li>To restore your session until you log out</li>
+        <li>To show ads to free users, and to hide them if you have an active ad-free subscription</li>
       </ul>
       <p>Another email signed in on the same device cannot see your gallery or named faces. The hashing method is the same for every account; isolation is which records that email is allowed to load.</p>
 
@@ -148,12 +150,27 @@
       </ul>
       <p>You can deny camera access in system or browser settings. The app cannot capture without that permission.</p>
 
-      <h2>7. Third parties</h2>
+      <h2>7. Ads, advertising ID, and purchases</h2>
+      <p>
+        If you have not subscribed, FacePhantom may show banner ads using Google AdMob.
+        AdMob may use the device advertising ID and other identifiers described in
+        <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>
+        and <a href="https://support.google.com/admob/answer/6128543">AdMob’s guidance</a>.
+        You can reset or opt out of ads personalization in your device Google settings.
+      </p>
+      <p>
+        The optional <strong>$3.99/month</strong> plan removes ads. Purchases are made through Google Play Billing.
+        FacePhantom does not collect your card number. Cancel or change the subscription in Google Play subscription settings (Play Store → Payments &amp; subscriptions).
+        Restoring purchases asks Play whether this Google account already has the ad-free plan.
+      </p>
+
+      <h2>8. Third parties</h2>
       <p>
         On first use, FacePhantom may download publicly available face-detection model files from a content delivery network (jsDelivr) so detection can run on your device.
         Those downloads do not include your photos, videos, email, or face hashes.
       </p>
       <p>
+        Ads are served by Google AdMob. Subscriptions and install distribution on Android are handled by Google Play.
         If you install FacePhantom from Google Play, Google may process data under
         <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
       </p>
@@ -161,31 +178,31 @@
         If you share or save a file to another app (Photos, Messages, social apps, and so on), that destination’s policy applies to the file you send.
       </p>
 
-      <h2>8. Retention and deletion</h2>
+      <h2>9. Retention and deletion</h2>
       <p>
         Local data stays on the device until you delete it, clear site data, uninstall the app, or use <strong>Clear all local data</strong> in Settings.
         Logging out keeps media and named faces on the device but stops using that email until you sign in again.
       </p>
 
-      <h2>9. Children</h2>
+      <h2>10. Children</h2>
       <p>
         FacePhantom is not directed at children under 13. We do not knowingly collect personal information from children on a FacePhantom server.
         Photos you take may include children; that media remains on your device unless you export it.
       </p>
 
-      <h2>10. Security</h2>
+      <h2>11. Security</h2>
       <p>
         Because processing is on-device, your media is not transmitted to us. Protect access to your device with the screen lock provided by your operating system.
         No method of storage is completely secure.
       </p>
 
-      <h2>11. Changes</h2>
+      <h2>12. Changes</h2>
       <p>
-        We may update this policy if the app’s behavior changes (for example, if cloud accounts, ads, or payments are added).
+        We may update this policy if the app’s behavior changes.
         The “Last updated” date at the top will change when we do.
       </p>
 
-      <h2>12. Contact</h2>
+      <h2>13. Contact</h2>
       <p>
         Questions about this policy: <a href="mailto:jnuno03@gmail.com">jnuno03@gmail.com</a>
       </p>
