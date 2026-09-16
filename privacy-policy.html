@@ -47,7 +47,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 11px;
+      }
+      header .mark svg {
+        width: 16px;
+        height: 16px;
+        display: block;
       }
       main {
         max-width: 720px;
@@ -84,7 +88,17 @@
   <body>
     <header>
       <a class="brand" href="#top">
-        <span class="mark">FP</span>
+        <span class="mark" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="m14.31 8 5.74 9.94" />
+            <path d="M9.69 8h11.48" />
+            <path d="m7.38 12 5.74-9.94" />
+            <path d="M9.69 16 3.95 6.06" />
+            <path d="M14.31 16H2.83" />
+            <path d="m16.62 12-5.74 9.94" />
+          </svg>
+        </span>
         FacePhantom
       </a>
     </header>
