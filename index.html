@@ -89,7 +89,7 @@
       <p class="updated">Last updated: September 16, 2026</p>
 
       <div class="callout">
-        <strong>Summary:</strong> FacePhantom processes camera, photo, and video data on your device. We do not operate a cloud backend for this app. Named-face photos, hashes, and names stay on this device. Photos, videos, and your email also stay on this device; you can export or share media yourself. The free app shows Google AdMob ads. A $2.99/month Google Play subscription removes ads.
+        <strong>Summary:</strong> FacePhantom processes camera, photo, and video data on your device. We do not operate a cloud backend for this app. Named-face photos, hashes, and names stay on this device. Photos, videos, and your email also stay on this device; you can export or share media yourself. The free app shows Google AdMob ads. A $2.99/month subscription on Google Play or the App Store removes ads.
       </div>
 
       <h2>1. Who we are</h2>
@@ -108,7 +108,7 @@
         <li><strong>Photos and videos.</strong> Media you capture or import, including blurred exports you save, is stored on the device.</li>
         <li><strong>Named-face records.</strong> If you name a person, the app stores a small photo of that face, the name you typed, a one-way hash of a numeric face descriptor, and which account it belongs to. The raw descriptor is discarded after hashing. These records stay on this device.</li>
         <li><strong>Session state.</strong> The app remembers that you are signed in until you log out.</li>
-        <li><strong>Subscription status.</strong> If you subscribe to remove ads, we cache that entitlement on the device so ads stay off. Google Play is the source of truth for whether the subscription is active.</li>
+        <li><strong>Subscription status.</strong> If you subscribe to remove ads, we cache that entitlement on the device so ads stay off. Google Play or the App Store is the source of truth for whether the subscription is active, depending on where the app was installed.</li>
       </ul>
       <p>Face detection runs in memory on the device. Live camera frames and temporary face descriptors are used to detect and match faces and are not uploaded to us.</p>
 
@@ -118,7 +118,7 @@
         <li>Your original or blurred photos or videos</li>
         <li>Face images, face embeddings, or face hashes</li>
         <li>Precise location, contacts, or microphone audio (the camera capture path does not record audio)</li>
-        <li>Payment card details (Google Play processes subscription payments, not FacePhantom)</li>
+        <li>Payment card details (Google Play or Apple process subscription payments, not FacePhantom)</li>
       </ul>
       <p>We do not sell your information.</p>
 
@@ -142,7 +142,7 @@
       <h2>6. Device permissions</h2>
       <ul>
         <li><strong>Camera.</strong> To show a live preview, detect faces, and capture photos or videos.</li>
-        <li><strong>Photos / storage (as provided by the OS or browser).</strong> To import media from your library and to save exports you choose to keep or share.</li>
+        <li><strong>Photos / storage.</strong> On iOS, Photo Library access to import media and save exports. On Android, storage or media library access for the same. The OS or browser may also prompt depending on how you run the app.</li>
       </ul>
       <p>You can deny camera access in system or browser settings. The app cannot capture without that permission.</p>
 
@@ -152,11 +152,15 @@
         AdMob may use the device advertising ID and other identifiers described in
         <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>
         and <a href="https://support.google.com/admob/answer/6128543">AdMob’s guidance</a>.
-        You can reset or opt out of ads personalization in your device Google settings.
+        On iOS, you can allow or deny tracking through the system App Tracking prompt and in Settings → Privacy &amp; Security → Tracking.
+        On Android, you can reset or opt out of ads personalization in your device Google settings.
       </p>
       <p>
-        The optional <strong>$2.99/month</strong> plan removes ads. Purchases are made through Google Play Billing.
-        FacePhantom does not collect your card number. Cancel or change the subscription in Google Play subscription settings (Play Store → Payments &amp; subscriptions).
+        The optional <strong>$2.99/month</strong> plan removes ads. Purchases are made through Google Play Billing on Android and the App Store (StoreKit) on iOS.
+        FacePhantom does not collect your card number. Cancel or change the subscription where you bought it: Play Store → Payments &amp; subscriptions on Android, or Settings → [your name] → Subscriptions on iOS.
+      </p>
+      <p>
+        The $2.99/month subscription auto-renews until cancelled. Payment is charged to the Apple ID or Google account used at purchase. The subscription renews unless auto-renew is turned off at least 24 hours before the end of the current period.
       </p>
 
       <h2>8. Third parties</h2>
@@ -165,9 +169,11 @@
         Those downloads do not include your photos, videos, email, or face hashes.
       </p>
       <p>
-        Ads are served by Google AdMob. Subscriptions and install distribution on Android are handled by Google Play.
+        Ads are served by Google AdMob. Subscriptions and install distribution are handled by Google Play on Android and Apple on iOS.
         If you install FacePhantom from Google Play, Google may process data under
         <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+        If you install FacePhantom from the App Store, Apple may process data under
+        <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.
       </p>
       <p>
         If you share or save a file to another app (Photos, Messages, social apps, and so on), that destination’s policy applies to the file you send.
@@ -203,7 +209,7 @@
       </p>
 
       <footer>
-        © 2026 FacePhantom · This page is the privacy policy URL for app store listings.
+        © 2026 FacePhantom · This page is the privacy policy URL for Google Play and App Store listings.
       </footer>
     </main>
   </body>
