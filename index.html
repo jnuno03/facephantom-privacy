@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy — FacePhantom</title>
     <link rel="canonical" href="https://jnuno03.github.io/facephantom-privacy/privacy-policy.html" />
-    <meta name="description" content="FacePhantom privacy policy. Face detection and blurring run on your device. Named-face hashes stay on this device. Photos and videos stay on this device unless you export them." />
+    <meta name="description" content="FacePhantom privacy policy. Face detection and blurring run on your device. Named-face photos, hashes, and names stay on this device. Photos and videos stay on this device unless you export them." />
     <link rel="icon" type="image/png" href="app-icon.png" />
     <style>
       :root {
@@ -89,7 +89,7 @@
       <p class="updated">Last updated: September 16, 2026</p>
 
       <div class="callout">
-        <strong>Summary:</strong> FacePhantom processes camera, photo, and video data on your device. We do not operate a cloud backend for this app. Named-face hashes stay on this device. Photos, videos, and your email also stay on this device; you can export or share media yourself. The free app shows Google AdMob ads. A $2.99/month Google Play subscription removes ads.
+        <strong>Summary:</strong> FacePhantom processes camera, photo, and video data on your device. We do not operate a cloud backend for this app. Named-face photos, hashes, and names stay on this device. Photos, videos, and your email also stay on this device; you can export or share media yourself. The free app shows Google AdMob ads. A $2.99/month Google Play subscription removes ads.
       </div>
 
       <h2>1. Who we are</h2>
@@ -106,7 +106,7 @@
       <ul>
         <li><strong>Email address.</strong> You enter an email to keep this device’s gallery and named faces tied to that sign-in. It is stored on the device (IndexedDB and local storage). It is not sent to a FacePhantom server — we do not operate an application server for accounts.</li>
         <li><strong>Photos and videos.</strong> Media you capture or import, including blurred exports you save, is stored on the device.</li>
-        <li><strong>Named-face records.</strong> If you name a person, the app stores a one-way hash of a numeric face descriptor, the name you typed, and which account it belongs to. We do not store a crop of the face or the raw descriptor after hashing.</li>
+        <li><strong>Named-face records.</strong> If you name a person, the app stores a small photo of that face, the name you typed, a one-way hash of a numeric face descriptor, and which account it belongs to. The raw descriptor is discarded after hashing. These records stay on this device.</li>
         <li><strong>Session state.</strong> The app remembers that you are signed in until you log out.</li>
         <li><strong>Subscription status.</strong> If you subscribe to remove ads, we cache that entitlement on the device so ads stay off. Google Play is the source of truth for whether the subscription is active.</li>
       </ul>
@@ -135,7 +135,7 @@
       <h2>5. Face data</h2>
       <p>
         FacePhantom uses on-device machine learning to find faces and, if you have named people, to compare a live descriptor to stored hashes.
-        Named-face hashes are not photographs. They are used only to match people you enrolled on that account.
+        When you name someone, the app also saves a small photo of that face on this device so they appear in your Faces list.
         You can delete named faces in the app. Uninstalling FacePhantom or clearing the app’s storage in your device settings removes remaining local data.
       </p>
 
